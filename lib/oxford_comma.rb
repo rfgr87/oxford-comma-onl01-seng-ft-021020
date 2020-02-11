@@ -8,7 +8,7 @@ def oxford_comma(array)
       index += 1
     end
   end
-    array1.join(", ")
-    array1 << ", and #{array[index+1]}"
-    return array1 
+  array1.join(", ")
+  array1 << ", and #{array[index+1]}"
+  return array1 
 end
