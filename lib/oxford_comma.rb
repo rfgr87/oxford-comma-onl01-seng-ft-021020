@@ -1,18 +1,18 @@
 def oxford_comma(array)
   index = 0
   array1 = []
-  string
   if array.length < 2
       return array[0]
     elsif array.length < 3 && array.length > 1 
-      return array1.join(", and ")
+      string = array1.join(", and ")
+      return string
     elsif array.length > 3
       while index < array.length - 2
         array1.push(array[index])
         index += 1
       end
     end
-    array1.join(", ")
-    array1 << ", and #{array[index+1]}"
-    return array1 
+    string = array1.join(", ")
+    string << ", and #{array[index+1]}"
+    string
 end
