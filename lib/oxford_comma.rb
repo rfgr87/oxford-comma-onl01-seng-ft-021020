@@ -7,9 +7,12 @@ def oxford_comma(array)
     elsif array.length < 3  
       return array1.join(", and ")
     elsif array.length > 3
-      loop do
+      while index < array.length - 2
         array1.push(array[index])
         index += 1
+      end
+    end
+    array1.join(", ")
       
   array1 << ", and #{array[index+1]}"
   return array1 
