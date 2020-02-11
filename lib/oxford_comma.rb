@@ -13,6 +13,6 @@ def oxford_comma(array)
       end
     end
     string = array1.join(", ")
-    string << ", and #{array[index+1]}"
+    string << ", and #{array[index]}"
     string
 end
