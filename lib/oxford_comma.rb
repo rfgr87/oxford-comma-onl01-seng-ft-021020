@@ -4,7 +4,7 @@ def oxford_comma(array)
   string
   if array.length < 2
       return array[0]
-    elsif array.length < 3  
+    elsif array.length < 3 && array.length > 1 
       return array1.join(", and ")
     elsif array.length > 3
       while index < array.length - 2
